@@ -40,30 +40,30 @@ Non-authoritative todo list
 ---------------------------
 
 *Short-term*, for everything is not perfect
-	-> rework the scenarii system
-	-> rework the configuration and global variables system
-	-> stabilise file exchange
-	-> implement application level module system
-	-> implement application level protocol system
-	-> save default conf for an automated legba / load net conf
-	-> add the documentation
+- rework the scenarii system
+- rework the configuration and global variables system
+- stabilise file exchange
+- implement application level module system
+- implement application level protocol system
+- save default conf for an automated legba / load net conf
+- add the documentation
 	
 *Middle-term*, for there is still road ahead
-	-> implement application level protocol
-	-> application : chat
-	-> modules : lsfr/msequence, matrix embedding
-	-> protocols : XMPP and IRC, SMTP/IMAP/POP3, TORRENT, FTP, HTTP, Telnet and SSH
-	-> pre-made scenarios : VoIP channel, web exchange
-	-> translate the documentation
+- implement application level protocol
+- application : chat
+- modules : lsfr/msequence, matrix embedding
+- protocols : XMPP and IRC, SMTP/IMAP/POP3, TORRENT, FTP, HTTP, Telnet and SSH
+- pre-made scenarios : VoIP channel, web exchange
+- translate the documentation
 	
 *Long-term*, for we should never forget it
-	-> IPv6 compatibility
-	-> Linux portability (dynamic pcap import according to configuration/os-detection)
-	-> GUI
-	-> framework orientation and dynamical worker import
-	-> high-level and embedded data steganography (DPI-style)
-	-> application : network output of a virtual machine
-	-> new craft : late voip
+- IPv6 compatibility
+- Linux portability (dynamic pcap import according to configuration/os-detection)
+- GUI
+- framework orientation and dynamical worker import
+- high-level and embedded data steganography (DPI-style)
+- application : network output of a virtual machine
+- new craft : late voip
 
 Thanks to
 ---------
