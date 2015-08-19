@@ -1,10 +1,10 @@
 #! /usr/bin/python
 # generated with papa legba
 
-DEVICE1 = "\Device\NPF_{C1F89C61-12B1-4E39-B6D2-10F1D58CF789}"
-DEV1MAC = "00ffc1f89c61"
-DEV1IP = "192.168.0.177"
+DEVICE1 = "\Device\NPF_{}"
+DEV1MAC = "001122334455"
+DEV1IP = "192.168.42.1"
 
-DEVICE2 = "\Device\NPF_{D8818210-7B7F-4099-B1D9-37E1937F9D03}"
-DEV2MAC = "ecf4bb753ed6"
-DEV2IP = "192.168.0.178"
+DEVICE2 = "\Device\NPF_{}"
+DEV2MAC = "ffeeccbbaa99"
+DEV2IP = "192.168.42.2"
