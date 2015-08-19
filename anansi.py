@@ -133,7 +133,7 @@ def netengine_start():
     NET_ENGINE = True
 
 ## SCENARIOS
-    # /!\ A RETRAVAILLER POUR LA SEPARATION STEG ET APPLI (PASSER DE STEG A CRAFT ?)
+    ## WORK IN PROGRESS
 
 def changeScenario():
     print "\nANANSI : stegconf.py => stegconf.py.old (backup)"
@@ -209,6 +209,22 @@ def spam_start():
     sks.start()
 
     APPLICATION = "spam"
+
+def filex_start():
+
+    global APPLICATION
+
+    print "\nFILE EXCHANGE : sending/receiving a file"
+    num = 2
+    while num not in [0,1]:
+        num = int(raw_input("\nFILE EXCHANGE : should we send (0) or receive (1) ?\n>"))
+    filename = str(raw_input("\nFILE EXCHANGE : please enter the filename\n>"))
+
+    sfx = workers.FileSpider(num,filename)
+    SPIDERNEST.append(sfx)
+    sfx.start()
+
+    APPLICATION = "filexchange"
 
 def chat_start():
 
@@ -388,7 +404,7 @@ def craft_menu():
             print "ANANSI : Sorry, I can't understand "+temp
 
 def application_menu():
-    temp = '5'
+    temp = '9'
     while temp != '0':
         header()
         application_header()
@@ -396,8 +412,9 @@ def application_menu():
         print "\t0. Main menu"
         print "\t1. Application spiders status"
         print "\t2. Application : spam spider"
-        print "\t3. Application : Shamir chat spider"
-        print "\t4. Kill application spiders"
+        print "\t3. Application : filexchange spider"
+        print "\t4. Application : Shamir chat spider (wip)"
+        print "\t5. Kill application spiders"
         print ""
         temp = str(raw_input("ANANSI : Please, choose.\n> "))
         if temp == '0':
@@ -407,8 +424,10 @@ def application_menu():
         elif temp == '2':
             spam_start()
         elif temp == '3':
-            chat_start()
+            filex_start()
         elif temp == '4':
+            chat_start()
+        elif temp == '5':
             killswitch_bytype("application")
         else:
             print "ANANSI : Sorry, I can't understand "+temp
