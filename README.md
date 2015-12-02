@@ -17,7 +17,7 @@ User guide
 
 Regarding installation, there is no assistant yet. Dependencies are *Python* (2.7 recommended), a virtual interface (*tuntap* for windows, *dummy interface* for linux), *pcap* and its associated wrapper (like *WinPcap* and Maissom Ciani's *winpcapy* under Windows). A small untranslated documentation can be found inside the project, which should give birth to an assistant in the future.
 
-Legba should assist you to select the virtual and the real interfaces, configure the network engine and the virtual interface, and modify the route (to use the real or virtual interface as the default route).
+Legba should assist in selecting the virtual and the real interfaces, configuring the network engine and the virtual interface, and modifying the route (to use the real or virtual interface as the default route).
 
 Anansi allows you to manage the spiders (the underlying processes running the different pieces of the modules), the buffers between them, to manage the scenarios (the sets of configuration for the modules, archived in the scenarios folder) and to manage the applications (which are running over the hidden channel). Only two applications are developed for the moment, sending random ASCII chars (for lab testing) and transferring a file (please notice the reception isn't stable yet, and there is no additional mechanism for the transfer).
 
@@ -30,7 +30,7 @@ The network level manipulates interfaces to intercept network data, exchange it 
 
 The craft level is the steganographic engine. It exchanges data with both the network and the application levels. Besides the insertion and extraction of steganographic data, it can provide a light flag system. For the moment, the craft level is quite locked around network steganography through binary substitution but should evolve to provide new functionalities.
 	
-The application level is made of all the homebrew applications available. At this stage of the project, a lab testing application (sending k random chars) and a crude file exchange application exist. Once the two other levels are more stable, the potential of the solution and the available applications should expend. The applications are completed by information treatments, like a Lagrangian interpolation system (providing repetition without redundancy). A LFSR module (modifying the steganographied data to limit spectral analysis) is being rewritten, and with time, new information treatments should appear.
+The application level is made of all the homebrew applications available. At this stage of the project, a lab testing application (sending k random chars) and a crude file exchange application exist. Once the two other levels are more stable, the potential of the solution and the number of available applications should expend. The applications are completed with information treatments, like a Lagrangian interpolation system (providing repetition without redundancy). A LFSR module (modifying the steganographied data to limit spectral analysis) is being rewritten, and with time, new information treatments should appear.
 
 Apart from the solution components, you may also find different useful libraries (checksums, shamir, etc.).
 
