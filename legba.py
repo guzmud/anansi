@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""legba is the lwa of crossroads
+"""low-level network management
 """
 
 import netifaces
@@ -11,6 +11,7 @@ def debug_callback(pkt):
 
 
 def interface_addr2(name):
+    """return the level 2 MAC"""
     return netifaces.ifaddresses(name)[17].pop(0)['addr']
 
 
